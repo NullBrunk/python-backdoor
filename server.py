@@ -3,10 +3,11 @@ import socket
 
 USERNAME = "admin"
 PASSWORD = "admin"
+PORT = 6556
 
 def connection(conn: socket.socket) -> bool:
 
-	conn.sendall("Username : ".encode("utf-8"))
+	conn.sendall("\nUsername : ".encode("utf-8"))
 	username = conn.recv(1024).decode("utf-8").strip()
 	
 	conn.sendall("Password : ".encode("utf-8"))
@@ -20,7 +21,7 @@ def connection(conn: socket.socket) -> bool:
 
 def main():
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	s.bind(("0.0.0.0", 6556))
+	s.bind(("0.0.0.0", PORT))
 
 	while True:
 
@@ -50,7 +51,7 @@ def main():
 						conn.sendall(cmd.encode("utf-8"))
 		
 		else:
-			conn.sendall("Invalid username or password !\n".encode("utf-8"))
+			conn.sendall("\nInvalid username or password !\n".encode("utf-8"))
 			conn.close()
 
 if __name__ == "__main__":
