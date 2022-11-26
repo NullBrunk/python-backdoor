@@ -1,7 +1,7 @@
 # Python
 
 This is a simple python3 backdoor that you can run on a target machine to get easy RCE.
-By default, the shell is protected with a combinaison of a USERNAME and a PASSWORD.
+By default, the shell is protected with a combinaison of a ``USERNAME`` and a ``PASSWORD``, and runs on the port ``6556``.
 
 # Usage :
 
