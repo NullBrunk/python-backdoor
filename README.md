@@ -1,5 +1,10 @@
 # Python
 
+![GitHub top language](https://img.shields.io/github/languages/top/NullBrunk/python-backdoor?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/NullBrunk/python-backdoor?style=for-the-badge)
+![repo size](https://img.shields.io/github/repo-size/NullBrunk/python-backdoor?style=for-the-badge)
+
+
 This is a simple python3 backdoor that you can run on a target machine to get easy RCE.
 By default, the shell is protected with a combinaison of a ``USERNAME`` and a ``PASSWORD``, and runs on the port ``6556``.
 
